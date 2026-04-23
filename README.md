@@ -1,14 +1,14 @@
 # Audio Visual Speech Enhancement System
 
-> Isolating and clarifying speech for hearing aid users and deaf individuals in multi-speaker environments — through the fusion of sound and sight.
+> Isolating and clarifying speech in multi-speaker environments — through the fusion of sound and sight.
 
 ---
 
 ## Overview
 
-Understanding speech when multiple people talk at once is one of the hardest perceptual challenges — even for those with full hearing. For individuals who rely on hearing aids or visual cues to communicate, it can be overwhelming.
+Understanding speech when multiple people talk at once is one of the hardest perceptual challenges — even for those with full hearing. In noisy, multi-speaker settings like meetings, classrooms, and social gatherings, picking out a single voice from the mix is a problem that remains unsolved at scale.
 
-This system addresses that problem by combining audio and video signals to isolate a target speaker's voice, suppress overlapping speech and noise, and deliver the result in a form suited to each user's needs — cleaner audio for hearing aid users, or text and visual feedback for deaf users.
+This system addresses that problem by combining audio and video signals to isolate a target speaker's voice, suppress overlapping speech and noise, and deliver cleaner, intelligible output in real time.
 
 ---
 
@@ -23,8 +23,8 @@ A microphone captures the raw audio stream while a camera records the target spe
 Visual features extracted from lip motion are fused with audio features to build a joint representation of the target speaker. This multimodal signal serves as a strong anchor when separating the speaker from a noisy, multi-speaker mixture.
 
 **3. Output Delivery**  
-- Hearing aid users receive an enhanced, noise-suppressed audio stream  
-- Deaf users receive synchronized visual feedback and/or real-time transcription
+- Users receive an enhanced, noise-suppressed audio stream  
+- Optional real-time transcription and visual feedback output
 
 ---
 
@@ -32,9 +32,8 @@ Visual features extracted from lip motion are fused with audio features to build
 
 - Real-time multi-speaker separation using audio-visual cues  
 - Lip-reading-informed speech enhancement  
-- Dual output modes — audio and text/visual  
-- Designed for challenging real-world settings: meetings, classrooms, social gatherings  
-- Accessible-first architecture — built for users with hearing challenges
+- Dual output modes — enhanced audio and text/visual  
+- Designed for challenging real-world settings: meetings, classrooms, social gatherings
 
 ---
 
@@ -42,8 +41,8 @@ Visual features extracted from lip motion are fused with audio features to build
 
 | User Group | Primary Output |
 |---|---|
-| Hearing aid users | Enhanced, denoised audio stream |
-| Deaf individuals | Real-time captions and visual feedback |
+| General users in noisy environments | Enhanced, denoised audio stream |
+| Users requiring transcription | Real-time captions and visual feedback |
 | Researchers / Developers | Modular pipeline for AV speech processing |
 
 ---
@@ -64,7 +63,7 @@ Input
                               ┌───────────────┴──────────────┐
                               ▼                              ▼
                      Enhanced Audio                  Text / Visual
-                   (Hearing Aid Users)              (Deaf Users)
+                                                     Transcription
 ```
 
 ---
@@ -104,9 +103,7 @@ This project is currently in early development. Contributions, feedback, and col
 
 ## Motivation
 
-Communication is a fundamental human right. For the roughly 1.5 billion people worldwide living with some degree of hearing loss, participating in everyday conversations — especially in noisy environments — requires significant effort and often leads to exclusion.
-
-This project exists to reduce that barrier through technology that is both intelligent and empathetic.
+The cocktail party problem — isolating a single speaker from a noisy mix of voices — is one of the longest-standing challenges in signal processing and AI. Recent advances in deep learning and multimodal fusion have opened new paths to solving it. This project explores those paths by combining visual speech cues with audio processing to build a system that works in the real world, not just in lab conditions.
 
 ---
 
@@ -115,6 +112,5 @@ This project exists to reduce that barrier through technology that is both intel
 To be decided.
 
 ---
-
 
 *Built with the belief that accessibility and technical ambition are not in conflict — they are the same goal.*
